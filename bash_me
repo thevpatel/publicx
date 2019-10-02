@@ -1,0 +1,65 @@
+export INSTALLED="$HOME/Installed"
+export WORKSPACE="$HOME/Workspace"
+export PATH=$PATH:"$INSTALLED/bin"
+
+# flutter/dart settings
+export PATH=$PATH:"$INSTALLED/flutter-sdk/bin"
+export PATH=$PATH:$HOME/.pub-cache/bin
+export PATH="$PATH":"$HOME/Installed/flutter-sdk/.pub-cache/bin"
+
+# gradle setting
+export GRADLE_HOME="$INSTALLED/gradle-5.1.1"
+PATH="$PATH:$GRADLE_HOME/bin"
+
+# maven settings
+export M2_HOME="$INSTALLED/apache-maven-3.6.0"
+export M2=$M2_HOME/bin
+PATH="$PATH:$M2_HOME/bin"
+
+# cassandra bin directory
+export PATH=$PATH:"$INSTALLED/apache-cassandra-3.11.3/bin"
+
+# mysql bin directory
+export PATH=$PATH:"$INSTALLED/mysql-8.0.13/bin"
+
+# android sdk
+export ANDROID_HOME="$INSTALLED/android-sdk"
+#export PATH=$PATH:"$INSTALLED/android-sdk/bin"
+#export ANDROID_SDK_ROOT="$INSTALLED/android-sdk"
+
+# golang sdk
+export GOPATH=$WORKSPACE/go-workspace
+export GOROOT=$INSTALLED/go-sdk
+export PATH=$PATH:$GOROOT/bin
+
+# command alias
+alias rf='rm -rf'
+alias ll='ls -larth'
+alias pj='ps -ef | grep java'
+alias pq='ps -ef | grep'
+
+# git command alias
+alias gcl='git clone --recurse-submodules'
+alias gst='git status'
+alias gad='git add '
+alias gaa='git add --all'
+alias gbr='git branch'
+alias gba='git branch -a'
+alias gcm='git commit'
+alias gdf='git diff'
+alias gch='git checkout'
+alias gls='git log --oneline'
+alias glg='git log --stat'
+alias gps='git push'
+alias gpsd='git push --dry-run'
+
+# docker command alias
+
+alias dim='docker images'
+alias dps='docker ps -a'
+alias drn='docker run --detach'
+alias dst='docker start'
+alias dsp='docker stop'
+alias dlo='docker logs'
+alias dkl='docker kill'
+

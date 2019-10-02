@@ -1,0 +1,13 @@
+[alias]
+  ls = log --graph --oneline
+  ca = commit -a --amend -C HEAD
+  co = checkout
+  ci = commit
+  st = status
+  br = branch
+  hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
+  type = cat-file -t
+  dump = cat-file -p
+[user]
+	email = vinod.patel@yantriks.com
+	name = weknowda

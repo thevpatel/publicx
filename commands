@@ -14,3 +14,25 @@ wget --no-cookies --no-check-certificate --header "Cookie: gpw_e24=http%3a%2F%2F
 
 
 
+for FILE in *.mp4 ; do mv "${FILE}" "${FILE:0:15}.mp4" ; done
+
+
+
+मुसलमान, हिन्दू को मुसलमान बना रहा है
+ईसाई, हिन्दू को ईसाई बना रहा है
+और हम हिन्दू को भी हिन्दू नहीं बना पा रहे हैं
+
+
+
+जब गोरखपुर में बच्चे मरे तब वहाँ इंचार्ज "डॉ कफील खान" था...
+और अब कोटा में बच्चे मर रहे हैं तो वहाँ भी इंचार्ज "डॉ तनवीर खान" है।
+
+कहीं ये मेडिकल जिहाद तो नहीं?
+
+
+
+
+#!/bin/sh
+
+nohup java -jar microservice-common-1.4.0.jar > application.log 2>&1 </dev/null &
+tail -f application.log

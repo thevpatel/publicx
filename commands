@@ -12,6 +12,8 @@ wget --no-check-certificate -c --header "Cookie: oraclelicense=accept-secureback
 wget --no-cookies --no-check-certificate --header "Cookie: gpw_e24=http%3a%2F%2Fwww.oracle.com%2Ftechnetwork%2Fjava%2Fjavase%2Fdownloads%2Fjdk8-downloads-2133151.html; oraclelicense=accept-securebackup-cookie;" "https://download.oracle.com/otn-pub/java/jdk/8u191-b12/2787e4a523244c269598db4e85c51e0c/jdk-8u191-linux-x64.tar.gz"
 
 
+wget -O- -q http://obf.dev.cr.us.corp.footlocker.net/capture/actuator/health
+
 
 
 for FILE in *.mp4 ; do mv "${FILE}" "${FILE:0:15}.mp4" ; done
@@ -36,3 +38,9 @@ for FILE in *.mp4 ; do mv "${FILE}" "${FILE:0:15}.mp4" ; done
 
 nohup java -jar microservice-common-1.4.0.jar > application.log 2>&1 </dev/null &
 tail -f application.log
+
+
+
+
+defaults delete com.apple.finder QLEnableTextSelection; killall Finder;
+defaults write com.apple.finder QLEnableTextSelection -boolean NO; killall Finder;
